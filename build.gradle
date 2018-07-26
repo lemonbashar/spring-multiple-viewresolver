@@ -1,0 +1,71 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+/*apply plugin: 'aspectj'*/
+apply plugin: 'war'
+apply plugin: 'idea'
+
+
+sourceSets {
+	main {
+		java.srcDir 'src/main/java'
+		/*output.resourcesDir 'build/classes/java/main'*/
+		output.resourcesDir 'classes/artifacts/Spring_main_war_exploded/WEB-INF/classes'
+	}
+
+	test {
+		java.srcDir 'src/test/java'
+		output.resourcesDir 'build/classes/java/main'
+	}
+}
+
+compileJava {
+	sourceCompatibility "1.8"
+	targetCompatibility "1.8"
+}
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+project.ext {
+    aspectjVersion = "1.8.2"
+}
+
+dependencies {
+    /*Java EE*/
+    compile 'javax.servlet:javax.servlet-api:4.0.0'
+    compile 'javax:javaee-web-api:8.0'
+    compile 'javax.servlet.jsp:jsp-api:2.2.1-b03'
+    compile 'javax.servlet.jsp.jstl:jstl-api:1.2'
+    compile 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
+    compile 'javax.servlet:jstl:1.2'
+    compile 'javax.servlet:servlet-api:2.5'
+    compile 'javax.servlet.jsp:jsp-api:2.2'
+    compile 'javax.inject:javax.inject:1'
+
+    /*Spring*/
+	compile 'org.springframework:spring-beans:5.0.0.RELEASE'
+	compile 'org.springframework:spring-core:5.0.0.RELEASE'
+	compile 'org.springframework:spring-context:5.0.0.RELEASE'
+    compile 'org.springframework:spring-web:5.0.0.RELEASE'
+    compile 'org.springframework:spring-webmvc:5.0.0.RELEASE'
+    compile 'org.springframework:spring-orm:5.0.0.RELEASE'
+
+
+
+    /*Thymeleaf*/
+    compile 'org.thymeleaf:thymeleaf:3.0.7.RELEASE'
+    compile 'org.thymeleaf:thymeleaf-spring4:3.0.7.RELEASE'
+
+    /*Apache Tiles*/
+	compile 'org.apache.tiles:tiles-core:3.0.5'
+	compile 'org.apache.tiles:tiles-jsp:3.0.5'
+	compile 'org.apache.tiles:tiles-api:3.0.5'
+	compile 'org.apache.tiles:tiles-servlet:3.0.5'
+
+
+    /*Test-Compile*/
+	testCompile 'junit:junit:4.12'
+	testCompile 'org.springframework:spring-test:4.0.5.RELEASE'
+}
