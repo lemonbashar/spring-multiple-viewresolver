@@ -1,0 +1,51 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spring-Config_main:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/Spring_Config_main_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring-Config_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Gradle: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-orm:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf-spring4:3.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf:3.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-jsp:3.0.5" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-servlet:3.0.5" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-core:3.0.5" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-template:3.0.5" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-api:3.0.5" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: ognl:ognl:3.1.12" />
+          <element id="library" level="project" name="Gradle: org.attoparser:attoparser:2.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.unbescape:unbescape:1.1.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.6" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-request-jsp:1.0.6" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-request-servlet:1.0.6" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-request-api:1.0.6" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.6" />
+          <element id="library" level="project" name="Gradle: commons-digester:commons-digester:2.0" />
+          <element id="library" level="project" name="Gradle: org.javassist:javassist:3.20.0-GA" />
+          <element id="library" level="project" name="Gradle: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-autotag-core-runtime:1.1.0" />
+        </element>
+        <element id="dir-copy" path="$PROJECT_DIR$/src/main/webApp" />
+      </element>
+      <element id="javaee-facet-resources" facet="Spring-Config_main/web/Web Gradle : Spring-Config.war" />
+    </root>
+  </artifact>
+</component>
